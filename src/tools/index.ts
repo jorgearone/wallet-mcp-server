@@ -5,6 +5,7 @@ import { registerDataApiTools } from "./data-apis.js";
 import { registerAptosIndexerTools } from "./aptos-indexer.js";
 import { registerGetNoditApiSpecTool } from "./get-nodit-api-spec.js";
 import { registerCallNoditApiTool } from "./call-nodit-api.js";
+import { registerWalletTools } from "./wallet-tools.js"; // Nueva línea
 
 export function registerAllTools(server: McpServer) {
   registerApiCategoriesTools(server);
@@ -13,4 +14,5 @@ export function registerAllTools(server: McpServer) {
   registerAptosIndexerTools(server);
   registerGetNoditApiSpecTool(server);
   registerCallNoditApiTool(server);
+  // registerWalletTools(server); // Se registra en index.ts principal
 }
